@@ -24,7 +24,6 @@ This version uses a lightweight, transparent graph algorithm before adding heavi
 3. **Similarity Scoring**
    The current scorer uses TF-IDF cosine similarity between `original_output` and `compressed_output`. This is a standard lexical semantic proxy and returns a bounded score between `0` and `1`.
 
-Later, you can replace the lightweight AMR-inspired compressor with a full AMR parser, sentence embeddings, abstractive summarization, or an LLM-based summarizer.
 
 ## File Structure
 
@@ -98,7 +97,6 @@ GROQ_API_KEY=your_groq_api_key_here
 GROQ_MODEL=llama-3.1-8b-instant
 ```
 
-You can change `GROQ_MODEL` to another Groq chat model if needed.
 
 ## Python Usage
 
