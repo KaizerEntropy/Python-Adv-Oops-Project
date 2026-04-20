@@ -223,11 +223,8 @@ pytest
 - `temperature` is set to `0.0` in the Groq client to reduce response variance.
 - TF-IDF similarity is useful as a baseline, but it is not perfect. Two answers can be semantically similar while using different vocabulary, which may lower the score.
 
-## Where to Improve Next
-
-Good next upgrades are:
-
-1. Add a full AMR parser backend and keep the current graph compressor as a fallback.
-2. Add embedding-based similarity for stronger semantic comparison.
-3. Add a Groq judge prompt that classifies whether intent is preserved.
-4. Store runs in a CSV or database for experiment tracking.
+## How to improve it ?
+1. Adding a full AMR parser backend and keep the current graph compressor as a fallback.
+2. Adding embedding-based similarity for stronger semantic comparison.
+3. Adding a Groq judge prompt that classifies whether intent is preserved.
+4. Storing in a CSV or database for experiment tracking.
