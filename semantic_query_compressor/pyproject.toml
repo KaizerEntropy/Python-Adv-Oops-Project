@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "semantic-query-compressor"
+version = "0.1.0"
+description = "Compress long prompts and evaluate LLM response consistency with Groq."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "groq>=0.11.0",
+    "python-dotenv>=1.0.1",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+]
+
+[project.scripts]
+semantic-query-compressor = "semantic_query_compressor.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
